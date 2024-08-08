@@ -35,16 +35,16 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (MacOs)", "Safari (Ubuntu)", "Chrome (Linux)"]
              });
-             if(!Pair_Code_By_Black_Castro.authState.creds.registered) {
+             if(!Pair_Code_By_𝐁𝐑𝐘𝐀𝐍_𝐓𝐄𝐂𝐇.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Black_Castro.requestPairingCode(num)
+                            const code = await Pair_Code_By_𝐁𝐑𝐘𝐀𝐍_𝐓𝐄𝐂𝐇.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Black_Castro.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Black_Castro.ev.on("connection.update", async (s) => {
+            Pair_Code_By_𝐁𝐑𝐘𝐀𝐍_𝐓𝐄𝐂𝐇.ev.on('creds.update', saveCreds)
+            Pair_Code_By_𝐁𝐑𝐘𝐀𝐍_𝐓𝐄𝐂𝐇.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,21 +54,21 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Black_Castro.sendMessage(Pair_Code_By_Black_Castro.user.id, { text: '' + b64data });
+               let session = await Pair_Code_By_𝐁𝐑𝐘𝐀𝐍_𝐓𝐄𝐂𝐇.sendMessage(Pair_Code_By_Black_Castro.user.id, { text: '' + b64data });
 
                let GHOST_MD_TEXT = `
 ____________________________
-        𝗠𝗔𝗗𝗔𝗥𝗔 𝗕𝗢𝗧 𝗠𝗗
+        𝗣𝗥𝗜𝗡𝗖𝗘 𝗕𝗢𝗧 𝗠𝗗
 ____________________________
 ╔════◇
-║『 *YOU'VE CHOSEN 𝗠𝗔𝗗𝗔𝗥𝗔-𝗠𝗗* 』
+║『 *YOU'VE CHOSEN 𝗣𝗥𝗜𝗡𝗖𝗘-𝗠𝗗* 』
 ║ You've Completed the First Step
 ║ to Deploy a Whatsapp Bot.
 ╚════════════════╝
 ╔═════◇
 ║ 『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/233530729233
-║❒ 𝐑𝐞𝐩𝐨: https://github.com/Elsa2090/Madara-md
+║❒ 𝐎𝐰𝐧𝐞𝐫: https://wa.me/233263176982
+║❒ 𝐑𝐞𝐩𝐨: https://github.com/Bryanlover1/PRINCE-V2
 ║❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: https://whatsapp.com/channel/0029VacpEdXIt5rqKLB9nC1L
 ║ 💜💜💜
 ╚════════════════╝
